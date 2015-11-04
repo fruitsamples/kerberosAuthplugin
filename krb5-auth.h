@@ -1,4 +1,5 @@
 
+#include <stdbool.h>
 #include <Kerberos/Kerberos.h>
 
 #ifndef __KRB5_AUTH_H

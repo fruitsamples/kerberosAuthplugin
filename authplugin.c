@@ -181,6 +181,9 @@ static OSStatus mechanismInvoke(AuthorizationMechanismRef inMechanism)
 		case kMechKerberosAuthenticateNoVerify:
 			result = invoke(inMechanism, authnoverify);
 			break;
+		case kMechKerberosLogin:
+			result = invoke(inMechanism, login);
+			break;
 		default:
 			return errAuthorizationInternal;
     }
